@@ -1,0 +1,165 @@
+body{
+    background-color: lightgrey;
+    
+}
+
+.commentBox{
+    background-color: white;
+    width: 800px;
+    border: 5px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin: 5px;
+    margin-left: 200px;
+   
+}
+
+#thirdCommentBox, #fourthCommentBox{
+    width: 720px;
+    margin-left: 280px;
+}
+.sideDate{
+    padding-left: 15px;
+}
+
+p,.sideDate{
+    color: grey;
+} 
+
+p{
+    padding-left: 70px;
+    text-align: left;
+    margin: 0px;
+    line-height: 1.8;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap
+  }
+  
+  .image {
+    padding-right: 15px;
+    padding-left: 30px;
+  }
+  
+  .replyBtn{
+    color:hsl(228, 45%, 44%);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    margin-left: 405px;
+    
+  }
+
+  .replyBtn0{
+    color:hsl(228, 45%, 44%);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    margin-left: 415px;
+  }
+
+  .replyBtn1{
+    color:hsl(228, 45%, 44%);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    margin-left: 324px;
+  }
+
+  .pBox>* {
+    display: flex;
+    flex: 1 1 80px;
+
+  }
+  .numberBox{
+    color: hsl(228, 51%, 68%);
+    background-color: rgb(225, 234, 243);
+    border-radius: 15px;
+    border: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+  }
+
+  div{
+    text-align: center;
+
+  }
+
+  .number{
+    color: hsl(228, 45%, 44%);
+    padding: 15px;
+  }
+
+  .email{
+    color:hsl(228, 45%, 44%);
+  }
+
+  .deleteBtn{
+    color:hsl(358, 79%, 66%);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    margin-left: 224px;
+    margin-right: 24px;
+  }
+
+  .editBtn{
+    color:rgb(79, 79, 165);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+  }
+
+  .thisIsYou{
+    color: white;
+    background-color:rgb(79, 79, 165);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 10px;
+  }
+
+  .textBox{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    padding-bottom: 65px;
+    text-align: left;
+    margin: 10px;
+    margin-top: 30px;
+    line-height: 1.8;
+  }
+  .sendBtn{
+    color:white;
+    background-color:hsl(228, 45%, 44%);
+    border: 1px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 25px;
+  }
+
+  
+
+
+
+  

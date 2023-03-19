@@ -6,11 +6,13 @@
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="styles.css" rel="stylesheet"/>
   
   <!-- Fonts from google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/52193078da.js" crossorigin="anonymous"></script>
 
   <title>CSS Challenge | Interactive comments section</title>
 
@@ -23,35 +25,58 @@
 <body>
 
   <!-- Comment #1 -->
-  12
-  <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  amyrobson 
-  1 month ago
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+<div id="firstCommentBox" class="commentBox">
+  <div class="container">
+  <div class="numberBox"><div>+</div><div class="number">12</div>-</div>
+  <div class="image"><img src="./images/avatars/image-amyrobson.png" alt="profile" /></div>
+  <div id="text" class=""><b>amyrobson</b><span class="sideDate">  1 month ago</span></div>
+  <button class="replyBtn"><i class='fas fa-reply-all'></i> Reply</i></button>
+  <p class="pBox">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+  </div>
+</div>
 
   <!-- Comment #2 -->
-  5
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+<div id="secondCommentBox" class="commentBox">
+  <div class="container">
+    <div class="numberBox"><div>+</div><div class="number">5</div>-</div>
+  <div class="image"><img src="./images/avatars/image-maxblagun.png" alt="profile" /></div>
+  <div id="text"><b>maxblagun</b><span class="sideDate">  2 weeks ago</span></div>
+  <button class="replyBtn0"><i class='fas fa-reply-all'></i>Reply</button>
+  <p class="pBox">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+</div>
+</div>
 
   <!-- Comment #3 (Reply to comment #2) -->
-  4
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+<div id="thirdCommentBox" class="commentBox">
+  <div class="container">
+    <div class="numberBox"><div>+</div><div class="number">4</div>-</div>
+  <div class="image"><img src="./images/avatars/image-ramsesmiron.png" alt="profile" /></div>
+  <div class="text"><b>ramsesmiron</b><span class="sideDate"> 1 week ago</span></div>
+  <button class="replyBtn1"><i class='fas fa-reply-all'></i>Reply</button>
+  <p class="pBox"><span class="email" style="display:inline">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+</div>
+</div>
 
   <!-- Comment #4 (Reply to comment #2) -->
-  2
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+<div id="fourthCommentBox" class="commentBox">
+  <div class="container">
+    <div class="numberBox"><div>+</div><div class="number">2</div>-</div>
+  <div class="image"><img src="./images/avatars/image-juliusomo.png" alt="profile" /></div>
+  <div class="text"><b>juliusomo</b><span class="thisIsYou">you</span><span class="sideDate">  2 days ago</span></div>
+  <button class="deleteBtn"><i class='fas fa-trash-alt'></i> Delete</button>
+  <button class="editBtn"><i class='fas fa-pen'></i> Edit</button>
+  <p class="pBox"><span class="email" style="display:inline">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+</div>
+</div>
 
-
-  
+<!-- Send Comment -->
+<div class="commentBox">
+<div class="container">
+  <div class="image2"><img src="./images/avatars/image-juliusomo.png" alt="profile" /></div>
+  <input class="textBox" placeholder=" Add a comment . . ." type="text">
+  <button class="sendBtn">SEND</button>
+</div>
+</div>
   <div class="attribution">
     Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
